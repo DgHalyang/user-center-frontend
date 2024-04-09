@@ -75,7 +75,7 @@ export function getRoutes() {
               "locale": "en-US",
               "order": null,
               "filePath": "README.md",
-              "updatedTime": 1706242090149,
+              "updatedTime": 1711956344000,
               "slugs": [
                 {
                   "depth": 1,
@@ -128,7 +128,7 @@ export function getRoutes() {
             "exact": true,
             "meta": {
               "filePath": "src/components/index.md",
-              "updatedTime": 1706242090132,
+              "updatedTime": 1711956344000,
               "title": "业务组件",
               "sidemenu": false,
               "slugs": [

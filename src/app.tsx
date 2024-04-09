@@ -4,7 +4,7 @@ import { BookOutlined, LinkOutlined } from '@ant-design/icons';
 import type { Settings as LayoutSettings } from '@ant-design/pro-components';
 import { PageLoading, SettingDrawer } from '@ant-design/pro-components';
 import type { RunTimeLayoutConfig } from 'umi';
-import { history, Link } from 'umi';
+import { history, Link, RequestConfig } from 'umi';
 import defaultSettings from '../config/defaultSettings';
 import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
 
@@ -14,6 +14,11 @@ const loginPath = '/user/login';
 /** 获取用户信息比较慢的时候会展示一个 loading */
 export const initialStateConfig = {
   loading: <PageLoading />,
+};
+
+export const request: RequestConfig = {
+  timeout: 10000,
+  // prefix:'http://localhost:8080'
 };
 
 /**
