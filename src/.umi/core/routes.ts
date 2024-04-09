@@ -206,6 +206,12 @@ export function getRoutes() {
             "exact": true
           },
           {
+            "name": "注册",
+            "path": "/user/register",
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__Register' */'/Users/hcj/Desktop/2024/yupi/code/user-center/second-time/frontend/src/pages/user/Register'), loading: LoadingComponent}),
+            "exact": true
+          },
+          {
             "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'/Users/hcj/Desktop/2024/yupi/code/user-center/second-time/frontend/src/pages/404'), loading: LoadingComponent}),
             "exact": true
           }
