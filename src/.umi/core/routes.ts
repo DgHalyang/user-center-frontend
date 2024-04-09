@@ -231,10 +231,10 @@ export function getRoutes() {
         "access": "canAdmin",
         "routes": [
           {
-            "path": "/admin/sub-page",
-            "name": "二级管理页",
+            "path": "/admin/user-manage",
+            "name": "用户管理",
             "icon": "smile",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Welcome' */'/Users/hcj/Desktop/2024/yupi/code/user-center/second-time/frontend/src/pages/Welcome'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Admin__UserManage' */'/Users/hcj/Desktop/2024/yupi/code/user-center/second-time/frontend/src/pages/Admin/UserManage'), loading: LoadingComponent}),
             "exact": true
           },
           {

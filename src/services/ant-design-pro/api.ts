@@ -32,7 +32,7 @@ export async function login(body: API.LoginParams, options?: { [key: string]: an
   });
 }
 
-/** 登录接口 POST /api/user/register */
+/** 注册接口 POST /api/user/register */
 export async function register(
   body: API.RegisterParams,
   options?: { [key: string]: any }
@@ -43,6 +43,14 @@ export async function register(
       "Content-Type": "application/json",
     },
     data: body,
+    ...(options || {}),
+  });
+}
+
+/** 搜索用户 GET /api/user/search */
+export async function searchUsers(options?: { [key: string]: any }) {
+  return request<API.NoticeIconList>('/api/user/search', {
+    method: 'GET',
     ...(options || {}),
   });
 }
